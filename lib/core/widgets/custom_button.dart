@@ -8,7 +8,7 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.title,
     required this.onTap,
-    this.backgroundColor = AppColors.orange,
+    this.backgroundColor = AppColors.primary,
     this.colorText,
     this.isLoading = false,
   });
@@ -23,13 +23,13 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 60.h,
+      height: 48.h,
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
           backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.r),
+            borderRadius: BorderRadius.circular(8.r),
             side: colorText == null
                 ? BorderSide.none
                 : BorderSide(color: colorText!),
@@ -46,7 +46,7 @@ class CustomButton extends StatelessWidget {
               )
             : Text(
                 title,
-                style: AppStyles.textMedium16.copyWith(
+                style: AppStyles.textSemiBold16.copyWith(
                   color: colorText ?? AppColors.white,
                 ),
               ),

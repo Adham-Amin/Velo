@@ -43,6 +43,7 @@ dependencies:
   lottie: ^3.3.3
   pretty_dio_logger: ^1.4.0
   shared_preferences: ^2.5.5
+  smooth_page_indicator: ^2.0.1
 
 dev_dependencies:
   easy_localization_generator: ^0.3.3
@@ -63,6 +64,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/translations/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see

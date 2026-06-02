@@ -1,3 +1,4 @@
+import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_transitions/go_transitions.dart';
@@ -33,5 +34,6 @@ class AppThemes {
       },
     ),
     fontFamily: AppStyles.fontFamily,
+    scaffoldBackgroundColor: AppColors.white,
   );
 }

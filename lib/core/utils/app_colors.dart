@@ -8,4 +8,7 @@ abstract class AppColors {
   static const Color grey = Color(0xFFC4C4C4);
   static const Color red = Color(0xFFFF0000);
   static const Color facebookColor = Color(0xFF1877F2);
+  static const Color primary = Color(0xff4F46E5);
+  static const Color greyBorder = Color(0xff8E99A4);
+  static const Color background = Color(0xffF1F2F4);
 }
