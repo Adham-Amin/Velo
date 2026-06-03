@@ -18,10 +18,12 @@ class CustomTextFormField extends StatelessWidget {
     this.readOnly = false,
     this.keyboardType,
     this.suffixIcon,
+    this.labelText,
   });
 
   final TextEditingController? controller;
   final String hintText;
+  final String? labelText;
   final String? Function(String?)? validator;
   final void Function(String)? onChanged;
   final void Function(String)? onFieldSubmitted;
@@ -50,6 +52,7 @@ class CustomTextFormField extends StatelessWidget {
       maxLines: maxLines,
       inputFormatters: inputFormatters,
       decoration: InputDecoration(
+        labelText: labelText,
         hintText: hintText,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,

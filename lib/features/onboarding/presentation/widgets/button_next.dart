@@ -22,7 +22,7 @@ class ButtonNext extends StatelessWidget {
       onTap: currentPage == OnboardingModel.pages.length - 1
           ? () {
               Prefs.setBool('SeenOn', true);
-              context.pushReplacement(AppRoutes.login);
+              context.pushReplacement(AppRoutes.auth);
             }
           : () {
               pageController.nextPage(

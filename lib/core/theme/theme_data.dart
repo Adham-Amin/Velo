@@ -35,5 +35,23 @@ class AppThemes {
     ),
     fontFamily: AppStyles.fontFamily,
     scaffoldBackgroundColor: AppColors.white,
+    inputDecorationTheme: InputDecorationTheme(
+      hintStyle: AppStyles.textRegular16.copyWith(color: AppColors.greyBorder),
+      filled: true,
+      prefixIconColor: AppColors.greyBorder,
+      fillColor: AppColors.background,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+        borderSide: BorderSide(color: AppColors.greyBorder),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+        borderSide: BorderSide(color: AppColors.primary),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+        borderSide: const BorderSide(color: Colors.red),
+      ),
+    ),
   );
 }

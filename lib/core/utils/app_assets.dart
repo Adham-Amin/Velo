@@ -2,6 +2,22 @@
 class AppAssets {
   AppAssets._();
   
+  /// Assets for iconsIcApple
+  /// assets/icons/ic_apple.svg
+  static const String iconsIcApple = "assets/icons/ic_apple.svg";
+
+  /// Assets for iconsIcFacebook
+  /// assets/icons/ic_facebook.svg
+  static const String iconsIcFacebook = "assets/icons/ic_facebook.svg";
+
+  /// Assets for iconsIcGoogle
+  /// assets/icons/ic_google.svg
+  static const String iconsIcGoogle = "assets/icons/ic_google.svg";
+
+  /// Assets for iconsIcLogo
+  /// assets/icons/ic_logo.svg
+  static const String iconsIcLogo = "assets/icons/ic_logo.svg";
+
   /// Assets for imagesLogo
   /// assets/images/logo.png
   static const String imagesLogo = "assets/images/logo.png";

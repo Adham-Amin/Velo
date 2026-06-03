@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:velo/features/auth/presentation/pages/auth_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:velo/features/splash/presentation/views/splash_view.dart';
 import 'app_routes.dart';
@@ -16,6 +17,11 @@ class RouterGenerationConfig {
         path: AppRoutes.onboarding,
         name: AppRoutes.onboarding,
         builder: (context, state) => const OnboardingScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.auth,
+        name: AppRoutes.auth,
+        builder: (context, state) => const AuthView(),
       ),
     ],
   );
