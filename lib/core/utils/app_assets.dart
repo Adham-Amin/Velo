@@ -33,5 +33,21 @@ class AppAssets {
   /// Assets for imagesOnboardingTwo
   /// assets/images/onboarding_two.png
   static const String imagesOnboardingTwo = "assets/images/onboarding_two.png";
+
+  /// Assets for svgsDonePass
+  /// assets/svgs/done_pass.svg
+  static const String svgsDonePass = "assets/svgs/done_pass.svg";
+
+  /// Assets for svgsForgotPass
+  /// assets/svgs/forgot_pass.svg
+  static const String svgsForgotPass = "assets/svgs/forgot_pass.svg";
+
+  /// Assets for svgsNewPass
+  /// assets/svgs/new_pass.svg
+  static const String svgsNewPass = "assets/svgs/new_pass.svg";
+
+  /// Assets for svgsVerifyEmail
+  /// assets/svgs/verify_email.svg
+  static const String svgsVerifyEmail = "assets/svgs/verify_email.svg";
 }
 

@@ -35,6 +35,12 @@ class AppThemes {
     ),
     fontFamily: AppStyles.fontFamily,
     scaffoldBackgroundColor: AppColors.white,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: AppColors.white,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      iconTheme: IconThemeData(color: AppColors.black),
+    ),
     inputDecorationTheme: InputDecorationTheme(
       hintStyle: AppStyles.textRegular16.copyWith(color: AppColors.greyBorder),
       filled: true,

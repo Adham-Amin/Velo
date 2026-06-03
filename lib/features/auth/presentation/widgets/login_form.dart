@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:velo/core/functions/validators.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_styles.dart';
 import 'package:velo/core/widgets/custom_button.dart';
 import 'package:velo/core/widgets/custom_text_form_field.dart';
@@ -63,7 +65,9 @@ class _LoginFormState extends State<LoginForm> {
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                context.push(AppRoutes.forgotPass);
+              },
               child: Text('Forgot Password?', style: AppStyles.textRegular12),
             ),
           ),

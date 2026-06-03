@@ -42,6 +42,7 @@ dependencies:
   go_router: ^17.2.3
   go_transitions: ^0.8.3
   lottie: ^3.3.3
+  pinput: ^6.0.2
   pretty_dio_logger: ^1.4.0
   shared_preferences: ^2.5.5
   smooth_page_indicator: ^2.0.1
@@ -66,6 +67,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/translations/
+    - assets/svgs/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
@@ -93,6 +95,7 @@ flutter_assets:
   assets_path:
     - assets/images/
     - assets/icons/
+    - assets/svgs/
   output_path: lib/core/utils/
   filename: app_assets.dart
   field_prefix: null
