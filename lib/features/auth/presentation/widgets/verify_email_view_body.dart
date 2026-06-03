@@ -17,8 +17,22 @@ class VerifyEmailViewBody extends StatefulWidget {
 }
 
 class _VerifyEmailViewBodyState extends State<VerifyEmailViewBody> {
-  bool get isValid => code.length == 4;
-  String code = '';
+  late TextEditingController codeController;
+
+  bool get isValid => codeController.text.length == 4;
+
+  @override
+  void initState() {
+    codeController = TextEditingController();
+    codeController.addListener(() => setState(() {}));
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    codeController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,21 +46,13 @@ class _VerifyEmailViewBodyState extends State<VerifyEmailViewBody> {
             subtitle: 'We sent a 4-digit code to ${widget.email}',
           ),
           SizedBox(height: 32.h),
-          PinCode(
-            onCodeChanged: (value) {
-              setState(() {
-                code = value;
-              });
-            },
-          ),
+          PinCode(onCodeChanged: codeController),
           SizedBox(height: 32.h),
           CustomButton(
             title: 'Verify',
             onTap: isValid
                 ? () {
-                    if (code.length == 4) {
-                      context.push(AppRoutes.newPass);
-                    }
+                    context.go(AppRoutes.newPass);
                   }
                 : null,
           ),

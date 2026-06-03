@@ -6,7 +6,7 @@ import 'package:velo/core/utils/app_colors.dart';
 class PinCode extends StatelessWidget {
   const PinCode({super.key, required this.onCodeChanged});
 
-  final Function(String)? onCodeChanged;
+  final TextEditingController onCodeChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +34,7 @@ class PinCode extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Pinput(
+        controller: onCodeChanged,
         length: 4,
         defaultPinTheme: defaultPinTheme,
         focusedPinTheme: defaultPinTheme.copyDecorationWith(
@@ -43,7 +44,6 @@ class PinCode extends StatelessWidget {
         separatorBuilder: (index) => SizedBox(width: 12.w),
         keyboardType: TextInputType.number,
         autofocus: true,
-        onCompleted: onCodeChanged,
       ),
     );
   }
