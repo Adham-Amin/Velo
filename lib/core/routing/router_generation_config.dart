@@ -4,6 +4,7 @@ import 'package:velo/features/auth/presentation/pages/done_reset_pass_view.dart'
 import 'package:velo/features/auth/presentation/pages/forgot_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
+import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:velo/features/splash/presentation/views/splash_view.dart';
 import 'app_routes.dart';
@@ -47,6 +48,11 @@ class RouterGenerationConfig {
         name: AppRoutes.verifyEmail,
         builder: (context, state) =>
             VerifyEmailView(email: state.extra as String),
+      ),
+      GoRoute(
+        path: AppRoutes.main,
+        name: AppRoutes.main,
+        builder: (context, state) => MainView(key: MainView.mainViewKey),
       ),
     ],
   );

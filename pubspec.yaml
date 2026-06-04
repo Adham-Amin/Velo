@@ -31,7 +31,6 @@ dependencies:
   animated_snack_bar: ^0.4.0
   cupertino_icons: ^1.0.8
   dio: ^5.9.2
-  easy_localization: ^3.0.8
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
@@ -48,7 +47,6 @@ dependencies:
   smooth_page_indicator: ^2.0.1
 
 dev_dependencies:
-  easy_localization_generator: ^0.3.3
   flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
@@ -66,7 +64,6 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/translations/
     - assets/svgs/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

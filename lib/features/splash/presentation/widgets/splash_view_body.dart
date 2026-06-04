@@ -38,7 +38,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void waitAnimationAndNavigate() async {
     Timer(const Duration(seconds: 2), () {
       if (Prefs.getBool('SeenOn')) {
-        context.go(AppRoutes.auth);
+        context.go(AppRoutes.main);
       } else {
         context.go(AppRoutes.onboarding);
       }

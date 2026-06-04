@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:velo/core/utils/app_assets.dart';
+import 'package:velo/core/utils/app_colors.dart';
+import 'package:velo/core/utils/app_styles.dart';
+
+class CustomBottomNavBar extends StatelessWidget {
+  final int currentIndex;
+  final Function(int) onTap;
+
+  const CustomBottomNavBar({
+    super.key,
+    required this.currentIndex,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Row(
+        children: [
+          _item(index: 0, icon: AppAssets.svgsHome, label: 'Home'),
+          _item(index: 1, icon: AppAssets.svgsSearch, label: 'Search'),
+          _item(index: 2, icon: AppAssets.svgsCircle, label: 'My courses'),
+          _item(index: 3, icon: AppAssets.svgsUser, label: 'Profile'),
+        ],
+      ),
+    );
+  }
+
+  Widget _item({
+    required int index,
+    required String icon,
+    required String label,
+  }) {
+    final bool isSelected = currentIndex == index;
+    return Expanded(
+      child: InkWell(
+        onTap: () => onTap(index),
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 250),
+              width: isSelected ? 70 : 0,
+              height: 6,
+              margin: const EdgeInsets.only(bottom: 16),
+              decoration: BoxDecoration(
+                color: isSelected ? AppColors.primary : Colors.transparent,
+                borderRadius: BorderRadius.circular(100),
+              ),
+            ),
+            SvgPicture.asset(
+              icon,
+              colorFilter: ColorFilter.mode(
+                isSelected ? AppColors.primary : AppColors.black,
+                BlendMode.srcIn,
+              ),
+            ),
+            SizedBox(height: 12.h),
+            Text(
+              label,
+              style: AppStyles.textMedium12.copyWith(
+                color: isSelected ? AppColors.primary : AppColors.black,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
