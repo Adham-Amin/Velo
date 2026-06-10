@@ -34,7 +34,6 @@ class HomeViewBody extends StatelessWidget {
           LabelAndSee(title: 'Top Rated Courses', onTap: () {}),
           SizedBox(height: 12.h),
           CourseHorizontalList(),
-
           SizedBox(height: 24.h),
         ],
       ),

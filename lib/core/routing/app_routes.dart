@@ -7,4 +7,5 @@ abstract class AppRoutes {
   static const newPass = '/new-pass';
   static const doneReset = '/done-reset';
   static const main = '/main';
+  static const courseDetails = '/course-details';
 }
