@@ -74,9 +74,17 @@ class AppAssets {
   /// assets/svgs/home.svg
   static const String svgsHome = "assets/svgs/home.svg";
 
+  /// Assets for svgsMastercard
+  /// assets/svgs/mastercard.svg
+  static const String svgsMastercard = "assets/svgs/mastercard.svg";
+
   /// Assets for svgsNewPass
   /// assets/svgs/new_pass.svg
   static const String svgsNewPass = "assets/svgs/new_pass.svg";
+
+  /// Assets for svgsPaypal
+  /// assets/svgs/paypal.svg
+  static const String svgsPaypal = "assets/svgs/paypal.svg";
 
   /// Assets for svgsPlay
   /// assets/svgs/play.svg
@@ -93,5 +101,9 @@ class AppAssets {
   /// Assets for svgsVerifyEmail
   /// assets/svgs/verify_email.svg
   static const String svgsVerifyEmail = "assets/svgs/verify_email.svg";
+
+  /// Assets for svgsVisa
+  /// assets/svgs/visa.svg
+  static const String svgsVisa = "assets/svgs/visa.svg";
 }
 

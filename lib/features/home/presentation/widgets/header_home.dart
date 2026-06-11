@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_assets.dart';
 import 'package:velo/core/utils/app_styles.dart';
 
@@ -19,7 +21,7 @@ class HeaderHome extends StatelessWidget {
         Text('Ahmed Mohamed', style: AppStyles.textRegular16),
         Spacer(),
         IconButton(
-          onPressed: () {},
+          onPressed: () => context.push(AppRoutes.checkout),
           icon: SvgPicture.asset(AppAssets.svgsCart),
         ),
       ],

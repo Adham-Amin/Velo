@@ -4,6 +4,7 @@ import 'package:velo/features/auth/presentation/pages/done_reset_pass_view.dart'
 import 'package:velo/features/auth/presentation/pages/forgot_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
+import 'package:velo/features/checkout/presentation/pages/checkout_view.dart';
 import 'package:velo/features/course_details/presentation/pages/cource_details_view.dart';
 import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
@@ -60,6 +61,11 @@ class RouterGenerationConfig {
         name: AppRoutes.courseDetails,
         builder: (context, state) =>
             CourceDetailsView(title: state.extra as String),
+      ),
+      GoRoute(
+        path: AppRoutes.checkout,
+        name: AppRoutes.checkout,
+        builder: (context, state) => CheckoutView(),
       ),
     ],
   );

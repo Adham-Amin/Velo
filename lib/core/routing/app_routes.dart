@@ -8,4 +8,5 @@ abstract class AppRoutes {
   static const doneReset = '/done-reset';
   static const main = '/main';
   static const courseDetails = '/course-details';
+  static const checkout = '/checkout';
 }
