@@ -15,7 +15,8 @@ class LessonItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: AppColors.background,
+        color: AppColors.white,
+        border: Border.all(color: AppColors.greyBorder),
         borderRadius: BorderRadius.circular(8.r),
       ),
       child: Row(

@@ -21,7 +21,8 @@ class CourseCardHorizontal extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(8)),
-          border: Border.all(color: AppColors.background),
+          color: AppColors.white,
+          border: Border.all(color: AppColors.greyBorder),
         ),
         child: Row(
           children: [
@@ -65,6 +66,7 @@ class CourseCardHorizontal extends StatelessWidget {
               ),
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(

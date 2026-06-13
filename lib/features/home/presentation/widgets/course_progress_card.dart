@@ -21,7 +21,8 @@ class CourseProgressCard extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.r),
-          border: Border.all(color: AppColors.background),
+          color: AppColors.white,
+          border: Border.all(color: AppColors.greyBorder),
         ),
         child: Row(
           children: [

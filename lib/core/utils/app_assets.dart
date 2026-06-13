@@ -58,6 +58,10 @@ class AppAssets {
   /// assets/svgs/cart.svg
   static const String svgsCart = "assets/svgs/cart.svg";
 
+  /// Assets for svgsCategory
+  /// assets/svgs/category.svg
+  static const String svgsCategory = "assets/svgs/category.svg";
+
   /// Assets for svgsCircle
   /// assets/svgs/circle.svg
   static const String svgsCircle = "assets/svgs/circle.svg";

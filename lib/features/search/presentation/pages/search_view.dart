@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:velo/features/search/presentation/widgets/search_view_body.dart';
+
+enum SearchScreenState { defaultView, suggestions, results, filter }
+
+class SearchView extends StatelessWidget {
+  const SearchView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(body: SafeArea(child: SearchViewBody()));
+  }
+}

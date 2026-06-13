@@ -16,7 +16,7 @@ class EnrollButton extends StatelessWidget {
         bottom: 32.h,
         top: 24.h,
       ),
-      color: AppColors.background,
+      color: AppColors.white,
       child: Row(
         children: [
           Expanded(

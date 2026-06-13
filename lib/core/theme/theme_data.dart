@@ -13,7 +13,7 @@ class AppThemes {
       },
     ),
     fontFamily: AppStyles.fontFamily,
-    scaffoldBackgroundColor: AppColors.white,
+    scaffoldBackgroundColor: AppColors.background,
     appBarTheme: AppBarTheme(
       titleTextStyle: AppStyles.textSemiBold18.copyWith(color: AppColors.black),
 

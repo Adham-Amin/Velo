@@ -19,7 +19,8 @@ class CourseCardVertical extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.r),
-          border: Border.all(color: AppColors.background),
+          color: AppColors.white,
+          border: Border.all(color: AppColors.greyBorder),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

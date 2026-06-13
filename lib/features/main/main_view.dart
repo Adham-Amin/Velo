@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:velo/core/utils/app_styles.dart';
 import 'package:velo/features/home/presentation/pages/home_view.dart';
 import 'package:velo/features/main/custom_bottom_nav_bar.dart';
 import 'package:velo/features/my_courses/presentation/pages/my_courses_view.dart';
 import 'package:velo/features/profile/presentation/pages/profile_view.dart';
+import 'package:velo/features/search/presentation/pages/search_view.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});
@@ -19,7 +19,7 @@ class MainPageState extends State<MainView> {
 
   final List<Widget> _pages = [
     HomeView(),
-    Center(child: Text('Search', style: AppStyles.textBold18)),
+    const SearchView(),
     MyCoursesView(),
     const ProfileView(),
   ];
