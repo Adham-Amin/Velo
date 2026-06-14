@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/features/search/presentation/widgets/search_view_body.dart';
 
 enum SearchScreenState { defaultView, suggestions, results, filter }
@@ -8,6 +9,9 @@ class SearchView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: SearchViewBody()));
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      body: SafeArea(child: SearchViewBody()),
+    );
   }
 }

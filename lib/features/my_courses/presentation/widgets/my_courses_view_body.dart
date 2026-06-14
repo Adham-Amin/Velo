@@ -7,14 +7,11 @@ class MyCoursesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w),
-      child: ListView.separated(
-        padding: EdgeInsets.zero,
-        itemCount: 5,
-        separatorBuilder: (context, index) => SizedBox(height: 12.h),
-        itemBuilder: (context, index) => CourseProgressCard(),
-      ),
+    return ListView.separated(
+      padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 16.w),
+      itemCount: 5,
+      separatorBuilder: (context, index) => SizedBox(height: 12.h),
+      itemBuilder: (context, index) => CourseProgressCard(),
     );
   }
 }

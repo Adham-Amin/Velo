@@ -12,8 +12,6 @@ class ProfileHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Profile', style: AppStyles.textSemiBold20),
-        SizedBox(height: 12.h),
         Row(
           children: [
             CircleAvatar(

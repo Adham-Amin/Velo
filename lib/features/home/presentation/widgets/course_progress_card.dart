@@ -22,7 +22,7 @@ class CourseProgressCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.r),
           color: AppColors.white,
-          border: Border.all(color: AppColors.greyBorder),
+          border: Border.all(color: AppColors.background),
         ),
         child: Row(
           children: [

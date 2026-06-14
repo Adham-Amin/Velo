@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/core/utils/app_styles.dart';
 import 'package:velo/features/search/presentation/widgets/search_recent_chips_item.dart';
 
@@ -19,7 +20,21 @@ class SearchRecentChips extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Recent Searches', style: AppStyles.textSemiBold16),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('Recent Searches', style: AppStyles.textSemiBold16),
+            GestureDetector(
+              onTap: () {},
+              child: Text(
+                'Clear all',
+                style: AppStyles.textSemiBold14.copyWith(
+                  color: AppColors.primary,
+                ),
+              ),
+            ),
+          ],
+        ),
         SizedBox(height: 12.h),
         Wrap(
           spacing: 8.w,

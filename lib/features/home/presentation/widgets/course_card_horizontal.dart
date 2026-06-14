@@ -22,7 +22,7 @@ class CourseCardHorizontal extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(8)),
           color: AppColors.white,
-          border: Border.all(color: AppColors.greyBorder),
+          border: Border.all(color: AppColors.background),
         ),
         child: Row(
           children: [

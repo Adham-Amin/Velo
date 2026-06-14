@@ -47,9 +47,7 @@ class ProfileSettingItem extends StatelessWidget {
             Expanded(
               child: Text(
                 label,
-                style: AppStyles.textRegular14.copyWith(
-                  color: labelColor,
-                ),
+                style: AppStyles.textRegular14.copyWith(color: labelColor),
               ),
             ),
             trailing ??

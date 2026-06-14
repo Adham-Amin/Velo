@@ -10,6 +10,8 @@ class SearchHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
+      filled: true,
+      fillColor: AppColors.white,
       hintText: 'Search',
       prefixIcon: Icon(Icons.search, color: AppColors.greyBorder),
       suffixIcon: IconButton(

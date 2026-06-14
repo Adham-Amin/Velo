@@ -13,10 +13,9 @@ class AppThemes {
       },
     ),
     fontFamily: AppStyles.fontFamily,
-    scaffoldBackgroundColor: AppColors.background,
+    scaffoldBackgroundColor: AppColors.white,
     appBarTheme: AppBarTheme(
       titleTextStyle: AppStyles.textSemiBold18.copyWith(color: AppColors.black),
-
       backgroundColor: AppColors.white,
       elevation: 0,
       scrolledUnderElevation: 0,
