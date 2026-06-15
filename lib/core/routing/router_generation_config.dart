@@ -7,6 +7,7 @@ import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
 import 'package:velo/features/change_pass/presentation/pages/change_pass_view.dart';
 import 'package:velo/features/checkout/presentation/pages/checkout_view.dart';
 import 'package:velo/features/course_details/presentation/pages/cource_details_view.dart';
+import 'package:velo/features/edit_profile/presentation/pages/edit_profile_view.dart';
 import 'package:velo/features/instructor/presentation/pages/instructor_view.dart';
 import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
@@ -96,6 +97,11 @@ class RouterGenerationConfig {
         path: AppRoutes.changePass,
         name: AppRoutes.changePass,
         builder: (context, state) => const ChangePassView(),
+      ),
+      GoRoute(
+        path: AppRoutes.editProfile,
+        name: AppRoutes.editProfile,
+        builder: (context, state) => const EditProfileView(),
       ),
     ],
   );
