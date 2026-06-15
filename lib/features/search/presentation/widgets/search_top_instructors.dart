@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/features/home/presentation/widgets/label_and_see.dart';
 import 'package:velo/features/search/data/models/Instructor_model.dart';
 import 'package:velo/features/search/presentation/widgets/instructor_item.dart';
@@ -21,7 +23,7 @@ class SearchTopInstructors extends StatelessWidget {
             separatorBuilder: (_, _) => SizedBox(width: 16.w),
             itemBuilder: (context, index) {
               return InstructorItem(
-                onTap: () {},
+                onTap: () => context.push(AppRoutes.instructor),
                 instructor: InstructorModel.instructors[index],
               );
             },

@@ -6,6 +6,7 @@ import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
 import 'package:velo/features/checkout/presentation/pages/checkout_view.dart';
 import 'package:velo/features/course_details/presentation/pages/cource_details_view.dart';
+import 'package:velo/features/instructor/presentation/pages/instructor_view.dart';
 import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:velo/features/payment/presentation/pages/payment_view.dart';
@@ -84,6 +85,11 @@ class RouterGenerationConfig {
         path: AppRoutes.payment,
         name: AppRoutes.payment,
         builder: (context, state) => const PaymentView(),
+      ),
+      GoRoute(
+        path: AppRoutes.instructor,
+        name: AppRoutes.instructor,
+        builder: (context, state) => const InstructorView(),
       ),
     ],
   );
