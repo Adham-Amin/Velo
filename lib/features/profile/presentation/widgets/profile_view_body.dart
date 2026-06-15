@@ -25,12 +25,12 @@ class ProfileViewBody extends StatelessWidget {
               ProfileSettingItem(
                 icon: Icons.person_outline,
                 label: 'Edit profile',
-                onTap: () {},
+                onTap: () => context.push(AppRoutes.editProfile),
               ),
               ProfileSettingItem(
                 icon: Icons.lock_outline,
                 label: 'Change password',
-                onTap: () {},
+                onTap: () => context.push(AppRoutes.changePass),
               ),
               ProfileSettingItem(
                 icon: Icons.favorite_outline,
@@ -67,7 +67,7 @@ class ProfileViewBody extends StatelessWidget {
                 label: 'Log out',
                 labelColor: AppColors.red,
                 iconColor: AppColors.red,
-                onTap: () {},
+                onTap: () => context.go(AppRoutes.auth),
               ),
             ],
           ),

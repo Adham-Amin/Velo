@@ -13,4 +13,6 @@ abstract class AppRoutes {
   static const wishlist = '/wishlist';
   static const payment = '/payment';
   static const instructor = '/instructor';
+  static const changePass = '/change-pass';
+  static const editProfile = '/edit-profiles';
 }
