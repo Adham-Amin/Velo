@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:velo/core/functions/navigate_to_tab.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:velo/core/utils/app_assets.dart';
 import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/core/utils/app_styles.dart';
 import 'package:velo/core/widgets/custom_button.dart';
 
-class EmptyCourses extends StatelessWidget {
-  const EmptyCourses({super.key});
+class EmptyPayment extends StatelessWidget {
+  const EmptyPayment({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,22 +17,19 @@ class EmptyCourses extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset(AppAssets.svgsNoCourse),
+          SvgPicture.asset(AppAssets.svgsPaymentEmpty),
           SizedBox(height: 24.h),
-          Text('No Courses Yet', style: AppStyles.textSemiBold24),
+          Text('Your Wallet is Empty', style: AppStyles.textSemiBold24),
           SizedBox(height: 8.h),
           Text(
-            'You have not enrolled in any course yet',
+            'Save your payment details for a faster and secure checkout experience.',
             textAlign: TextAlign.center,
             style: AppStyles.textRegular16.copyWith(
               color: AppColors.greyBorder,
             ),
           ),
           SizedBox(height: 24.h),
-          CustomButton(
-            title: 'Explore Courses',
-            onTap: () => navigateToTab(context, 0),
-          ),
+          CustomButton(title: 'Add Payment Method', onTap: () {}),
         ],
       ),
     );

@@ -8,6 +8,7 @@ import 'package:velo/features/checkout/presentation/pages/checkout_view.dart';
 import 'package:velo/features/course_details/presentation/pages/cource_details_view.dart';
 import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
+import 'package:velo/features/payment/presentation/pages/payment_view.dart';
 import 'package:velo/features/search/presentation/pages/search_filter_view.dart';
 import 'package:velo/features/splash/presentation/views/splash_view.dart';
 import 'package:velo/features/wishlist/presentation/pages/wishlist_view.dart';
@@ -78,6 +79,11 @@ class RouterGenerationConfig {
         path: AppRoutes.wishlist,
         name: AppRoutes.wishlist,
         builder: (context, state) => const WishlistView(),
+      ),
+      GoRoute(
+        path: AppRoutes.payment,
+        name: AppRoutes.payment,
+        builder: (context, state) => const PaymentView(),
       ),
     ],
   );

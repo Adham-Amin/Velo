@@ -21,10 +21,11 @@ class EmptyWishlist extends StatelessWidget {
         children: [
           SvgPicture.asset(AppAssets.svgsEmptyWishlist),
           SizedBox(height: 24.h),
-          Text('Your Wishlist Is Empty', style: AppStyles.textSemiBold24),
+          Text('Your Wishlist is Empty', style: AppStyles.textSemiBold24),
           SizedBox(height: 8.h),
           Text(
             'Save your favorite courses here',
+            textAlign: TextAlign.center,
             style: AppStyles.textRegular16.copyWith(
               color: AppColors.greyBorder,
             ),
