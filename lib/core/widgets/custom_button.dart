@@ -44,10 +44,13 @@ class CustomButton extends StatelessWidget {
                   ),
                 ),
               )
-            : Text(
-                title,
-                style: AppStyles.textSemiBold16.copyWith(
-                  color: colorText ?? AppColors.white,
+            : FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  title,
+                  style: AppStyles.textSemiBold16.copyWith(
+                    color: colorText ?? AppColors.white,
+                  ),
                 ),
               ),
       ),

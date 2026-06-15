@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:velo/core/functions/logout_dialog.dart';
 import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/features/profile/presentation/widgets/profile_header.dart';
@@ -67,7 +68,7 @@ class ProfileViewBody extends StatelessWidget {
                 label: 'Log out',
                 labelColor: AppColors.red,
                 iconColor: AppColors.red,
-                onTap: () => context.go(AppRoutes.auth),
+                onTap: () => logoutDialog(context),
               ),
             ],
           ),
