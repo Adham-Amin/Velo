@@ -70,6 +70,10 @@ class AppAssets {
   /// assets/svgs/done_pass.svg
   static const String svgsDonePass = "assets/svgs/done_pass.svg";
 
+  /// Assets for svgsEmptyWishlist
+  /// assets/svgs/empty_wishlist.svg
+  static const String svgsEmptyWishlist = "assets/svgs/empty_wishlist.svg";
+
   /// Assets for svgsForgotPass
   /// assets/svgs/forgot_pass.svg
   static const String svgsForgotPass = "assets/svgs/forgot_pass.svg";
@@ -85,6 +89,14 @@ class AppAssets {
   /// Assets for svgsNewPass
   /// assets/svgs/new_pass.svg
   static const String svgsNewPass = "assets/svgs/new_pass.svg";
+
+  /// Assets for svgsNoCourse
+  /// assets/svgs/no_course.svg
+  static const String svgsNoCourse = "assets/svgs/no_course.svg";
+
+  /// Assets for svgsPaymentEmpty
+  /// assets/svgs/payment_empty.svg
+  static const String svgsPaymentEmpty = "assets/svgs/payment_empty.svg";
 
   /// Assets for svgsPaypal
   /// assets/svgs/paypal.svg

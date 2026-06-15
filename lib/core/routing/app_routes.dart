@@ -10,4 +10,6 @@ abstract class AppRoutes {
   static const courseDetails = '/course-details';
   static const checkout = '/checkout';
   static const searchFilter = '/searchFilter';
+  static const wishlist = '/wishlist';
+  static const payment = '/payment';
 }

@@ -10,6 +10,7 @@ import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:velo/features/search/presentation/pages/search_filter_view.dart';
 import 'package:velo/features/splash/presentation/views/splash_view.dart';
+import 'package:velo/features/wishlist/presentation/pages/wishlist_view.dart';
 import 'app_routes.dart';
 
 class RouterGenerationConfig {
@@ -72,6 +73,11 @@ class RouterGenerationConfig {
         path: AppRoutes.searchFilter,
         name: AppRoutes.searchFilter,
         builder: (context, state) => const SearchFilterView(),
+      ),
+      GoRoute(
+        path: AppRoutes.wishlist,
+        name: AppRoutes.wishlist,
+        builder: (context, state) => const WishlistView(),
       ),
     ],
   );

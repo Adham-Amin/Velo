@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/features/profile/presentation/widgets/profile_header.dart';
 import 'package:velo/features/profile/presentation/widgets/profile_setting_item.dart';
@@ -33,12 +35,12 @@ class ProfileViewBody extends StatelessWidget {
               ProfileSettingItem(
                 icon: Icons.favorite_outline,
                 label: 'Wishlist',
-                onTap: () {},
+                onTap: () => context.push(AppRoutes.wishlist),
               ),
               ProfileSettingItem(
                 icon: Icons.credit_card,
                 label: 'Payment Method',
-                onTap: () {},
+                onTap: () => context.push(AppRoutes.payment),
               ),
             ],
           ),
