@@ -18,6 +18,10 @@ class AppAssets {
   /// assets/icons/ic_logo.svg
   static const String iconsIcLogo = "assets/icons/ic_logo.svg";
 
+  /// Assets for imagesCard
+  /// assets/images/card.png
+  static const String imagesCard = "assets/images/card.png";
+
   /// Assets for imagesCardLearning
   /// assets/images/card_learning.png
   static const String imagesCardLearning = "assets/images/card_learning.png";

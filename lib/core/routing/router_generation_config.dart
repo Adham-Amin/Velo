@@ -11,6 +11,7 @@ import 'package:velo/features/edit_profile/presentation/pages/edit_profile_view.
 import 'package:velo/features/instructor/presentation/pages/instructor_view.dart';
 import 'package:velo/features/main/main_view.dart';
 import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
+import 'package:velo/features/payment/presentation/pages/add_payment_view.dart';
 import 'package:velo/features/payment/presentation/pages/payment_view.dart';
 import 'package:velo/features/search/presentation/pages/search_filter_view.dart';
 import 'package:velo/features/splash/presentation/views/splash_view.dart';
@@ -87,6 +88,11 @@ class RouterGenerationConfig {
         path: AppRoutes.payment,
         name: AppRoutes.payment,
         builder: (context, state) => const PaymentView(),
+      ),
+      GoRoute(
+        path: AppRoutes.addPayment,
+        name: AppRoutes.addPayment,
+        builder: (context, state) => const AddPaymentView(),
       ),
       GoRoute(
         path: AppRoutes.instructor,

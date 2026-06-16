@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_assets.dart';
 import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/core/utils/app_styles.dart';
@@ -29,7 +31,10 @@ class EmptyPayment extends StatelessWidget {
             ),
           ),
           SizedBox(height: 24.h),
-          CustomButton(title: 'Add Payment Method', onTap: () {}),
+          CustomButton(
+            title: 'Add Payment Method',
+            onTap: () => context.push(AppRoutes.addPayment),
+          ),
         ],
       ),
     );

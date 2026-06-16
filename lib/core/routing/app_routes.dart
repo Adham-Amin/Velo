@@ -12,6 +12,7 @@ abstract class AppRoutes {
   static const searchFilter = '/searchFilter';
   static const wishlist = '/wishlist';
   static const payment = '/payment';
+  static const addPayment = '/addPayment';
   static const instructor = '/instructor';
   static const changePass = '/change-pass';
   static const editProfile = '/edit-profiles';
