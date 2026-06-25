@@ -1,0 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:velo/features/user/profile/presentation/widgets/profile_view_body.dart';
+
+class ProfileView extends StatelessWidget {
+  const ProfileView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Profile')),
+      body: ProfileViewBody(),
+    );
+  }
+}

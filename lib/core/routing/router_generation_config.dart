@@ -4,23 +4,24 @@ import 'package:velo/features/auth/presentation/pages/done_reset_pass_view.dart'
 import 'package:velo/features/auth/presentation/pages/forgot_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
-import 'package:velo/features/change_pass/presentation/pages/change_pass_view.dart';
-import 'package:velo/features/checkout/presentation/pages/checkout_view.dart';
-import 'package:velo/features/course_details/presentation/pages/cource_details_view.dart';
-import 'package:velo/features/edit_profile/presentation/pages/edit_profile_view.dart';
-import 'package:velo/features/instructor/presentation/pages/instructor_view.dart';
-import 'package:velo/features/main/main_view.dart';
-import 'package:velo/features/onboarding/presentation/views/onboarding_screen.dart';
-import 'package:velo/features/payment/presentation/pages/add_payment_view.dart';
-import 'package:velo/features/payment/presentation/pages/payment_view.dart';
-import 'package:velo/features/search/presentation/pages/search_filter_view.dart';
-import 'package:velo/features/splash/presentation/views/splash_view.dart';
-import 'package:velo/features/wishlist/presentation/pages/wishlist_view.dart';
+import 'package:velo/features/instructor/main/instructor_main_view.dart';
+import 'package:velo/features/user/change_pass/presentation/pages/change_pass_view.dart';
+import 'package:velo/features/user/checkout/presentation/pages/checkout_view.dart';
+import 'package:velo/features/user/course_details/presentation/pages/cource_details_view.dart';
+import 'package:velo/features/user/edit_profile/presentation/pages/edit_profile_view.dart';
+import 'package:velo/features/user/instructor/presentation/pages/instructor_view.dart';
+import 'package:velo/features/user/main/main_view.dart';
+import 'package:velo/features/intro/onboarding/presentation/views/onboarding_screen.dart';
+import 'package:velo/features/user/payment/presentation/pages/add_payment_view.dart';
+import 'package:velo/features/user/payment/presentation/pages/payment_view.dart';
+import 'package:velo/features/user/search/presentation/pages/search_filter_view.dart';
+import 'package:velo/features/intro/splash/presentation/views/splash_view.dart';
+import 'package:velo/features/user/wishlist/presentation/pages/wishlist_view.dart';
 import 'app_routes.dart';
 
 class RouterGenerationConfig {
   static GoRouter router = GoRouter(
-    initialLocation: AppRoutes.splash,
+    initialLocation: AppRoutes.instructorMain,
     routes: [
       GoRoute(
         path: AppRoutes.splash,
@@ -108,6 +109,11 @@ class RouterGenerationConfig {
         path: AppRoutes.editProfile,
         name: AppRoutes.editProfile,
         builder: (context, state) => const EditProfileView(),
+      ),
+      GoRoute(
+        path: AppRoutes.instructorMain,
+        name: AppRoutes.instructorMain,
+        builder: (context, state) => const InstructorMainView(),
       ),
     ],
   );
