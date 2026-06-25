@@ -6,8 +6,14 @@ import 'package:velo/core/utils/app_styles.dart';
 class ActionButton extends StatelessWidget {
   final IconData icon;
   final String label;
+  final VoidCallback? onTap;
 
-  const ActionButton({super.key, required this.icon, required this.label});
+  const ActionButton({
+    super.key,
+    required this.icon,
+    required this.label,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +21,7 @@ class ActionButton extends StatelessWidget {
       color: AppColors.background,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         borderRadius: BorderRadius.circular(16),
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 16),
