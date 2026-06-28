@@ -27,6 +27,7 @@ class QuickActionsInstructorDashboard extends StatelessWidget {
             SizedBox(width: 12),
             Expanded(
               child: ActionButton(
+                onTap: () => context.push(AppRoutes.instructorReview),
                 icon: Icons.rate_review_outlined,
                 label: 'Reviews',
               ),
