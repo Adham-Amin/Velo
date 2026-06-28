@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/create_course_view_body.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/create_course_view_body.dart';
 
 class CreateCourseView extends StatelessWidget {
   const CreateCourseView({super.key});

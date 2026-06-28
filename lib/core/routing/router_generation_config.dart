@@ -4,7 +4,7 @@ import 'package:velo/features/auth/presentation/pages/done_reset_pass_view.dart'
 import 'package:velo/features/auth/presentation/pages/forgot_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
-import 'package:velo/features/instructor/create_cource/presentation/pages/create_course_view.dart';
+import 'package:velo/features/instructor/create_course/presentation/pages/create_course_view.dart';
 import 'package:velo/features/instructor/main/instructor_main_view.dart';
 import 'package:velo/features/instructor/reviews/presentation/pages/instructor_reviews_view.dart';
 import 'package:velo/features/user/change_pass/presentation/pages/change_pass_view.dart';

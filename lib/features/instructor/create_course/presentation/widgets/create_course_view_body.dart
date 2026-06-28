@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:velo/core/widgets/custom_button.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/course_category_dropdown.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/course_description_field.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/course_difficulty_selector.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/course_price_field.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/course_title_field.dart';
-import 'package:velo/features/instructor/create_cource/presentation/widgets/thumbnail_upload.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/course_category_dropdown.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/course_description_field.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/course_difficulty_selector.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/course_price_field.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/course_title_field.dart';
+import 'package:velo/features/instructor/create_course/presentation/widgets/thumbnail_upload.dart';
 
 class CreateCourseViewBody extends StatefulWidget {
   const CreateCourseViewBody({super.key});

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:velo/features/instructor/my_courses/presentation/pages/instructor_my_courses_view.dart';
 import 'package:velo/features/instructor/dashboard/presentation/pages/instructor_dashboard_view.dart';
 import 'package:velo/features/instructor/main/custom_instructor_bottom_nav_bar.dart';
 
@@ -16,7 +17,7 @@ class MainPageState extends State<InstructorMainView> {
 
   final List<Widget> _pages = [
     InstructorDashboardView(),
-    Center(child: Text('My Courses')),
+    InstructorMyCoursesView(),
     Center(child: Text('Chat')),
     Center(child: Text('Profile')),
   ];
