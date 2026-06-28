@@ -20,4 +20,5 @@ abstract class AppRoutes {
   static const createCourse = '/create-course';
   static const instructorReview = '/instructor-review';
   static const enrollments = '/enrollments';
+  static const instructorConversation = '/instructor-conversation';
 }

@@ -6,6 +6,7 @@ import 'package:velo/features/auth/presentation/pages/reset_pass_view.dart';
 import 'package:velo/features/auth/presentation/pages/verify_email_view.dart';
 import 'package:velo/features/instructor/create_course/presentation/pages/create_course_view.dart';
 import 'package:velo/features/instructor/enrollments/presentation/pages/enrollments_view.dart';
+import 'package:velo/features/instructor/instructor_chat/presentation/pages/instructor_conversation_view.dart';
 import 'package:velo/features/instructor/main/instructor_main_view.dart';
 import 'package:velo/features/instructor/reviews/presentation/pages/instructor_reviews_view.dart';
 import 'package:velo/features/user/change_pass/presentation/pages/change_pass_view.dart';
@@ -132,6 +133,12 @@ class RouterGenerationConfig {
         path: AppRoutes.enrollments,
         name: AppRoutes.enrollments,
         builder: (context, state) => const EnrollmentsView(),
+      ),
+      GoRoute(
+        path: AppRoutes.instructorConversation,
+        name: AppRoutes.instructorConversation,
+        builder: (context, state) =>
+            InstructorConversationView(name: state.extra as String),
       ),
     ],
   );
