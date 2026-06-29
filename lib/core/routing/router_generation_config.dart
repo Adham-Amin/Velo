@@ -8,6 +8,8 @@ import 'package:velo/features/instructor/create_course/presentation/pages/create
 import 'package:velo/features/instructor/enrollments/presentation/pages/enrollments_view.dart';
 import 'package:velo/features/instructor/instructor_change_pass/presentation/pages/instructor_change_pass_view.dart';
 import 'package:velo/features/instructor/instructor_chat/presentation/pages/instructor_conversation_view.dart';
+import 'package:velo/features/instructor/instructor_course_details/presentation/pages/add_lesson_view.dart';
+import 'package:velo/features/instructor/instructor_course_details/presentation/pages/instructor_course_details_view.dart';
 import 'package:velo/features/instructor/instructor_edit_profile/presentation/pages/instructor_edit_profile_view.dart';
 import 'package:velo/features/instructor/main/instructor_main_view.dart';
 import 'package:velo/features/instructor/reviews/presentation/pages/instructor_reviews_view.dart';
@@ -152,6 +154,17 @@ class RouterGenerationConfig {
         path: AppRoutes.instructorChangePass,
         name: AppRoutes.instructorChangePass,
         builder: (context, state) => const InstructorChangePassView(),
+      ),
+      GoRoute(
+        path: AppRoutes.instructorAddLesson,
+        name: AppRoutes.instructorAddLesson,
+        builder: (context, state) => const AddLessonView(),
+      ),
+      GoRoute(
+        path: AppRoutes.instructorCourseDetails,
+        name: AppRoutes.instructorCourseDetails,
+        builder: (context, state) =>
+            InstructorCourseDetailsView(title: state.extra as String),
       ),
     ],
   );

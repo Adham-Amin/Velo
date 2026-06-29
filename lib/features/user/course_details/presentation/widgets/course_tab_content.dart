@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:velo/features/user/course_details/presentation/widgets/course_about_tab.dart';
 import 'package:velo/features/user/course_details/presentation/widgets/course_lessons_tab.dart';
 
-class CourseTabContent extends StatefulWidget {
+class CourseTabContent extends StatelessWidget {
   const CourseTabContent({super.key});
 
-  @override
-  State<CourseTabContent> createState() => CourseTabContentState();
-}
-
-class CourseTabContentState extends State<CourseTabContent> {
   @override
   Widget build(BuildContext context) {
     final controller = DefaultTabController.of(context);
