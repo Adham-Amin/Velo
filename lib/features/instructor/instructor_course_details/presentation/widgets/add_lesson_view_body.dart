@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:velo/core/functions/validators.dart';
 import 'package:velo/core/widgets/custom_button.dart';
 import 'package:velo/core/widgets/custom_text_form_field.dart';
+import 'package:velo/features/instructor/instructor_course_details/domain/entities/lesson_entity.dart';
 import 'package:velo/features/user/home/presentation/widgets/label_and_see.dart';
 
 class AddLessonViewBody extends StatefulWidget {
-  const AddLessonViewBody({super.key});
+  const AddLessonViewBody({super.key, this.lesson});
+
+  final LessonEntity? lesson;
 
   @override
   State<AddLessonViewBody> createState() => _AddLessonViewBodyState();
@@ -20,10 +24,12 @@ class _AddLessonViewBodyState extends State<AddLessonViewBody> {
 
   @override
   void initState() {
-    _titleController = TextEditingController();
+    _titleController = TextEditingController(text: widget.lesson?.title);
     _descController = TextEditingController();
     _linkController = TextEditingController();
-    _durationController = TextEditingController();
+    _durationController = TextEditingController(
+      text: widget.lesson?.duration.toString(),
+    );
     super.initState();
   }
 
@@ -92,7 +98,18 @@ class _AddLessonViewBodyState extends State<AddLessonViewBody> {
               ),
             ),
           ),
-          CustomButton(title: 'Save Lesson', onTap: () {}),
+          CustomButton(
+            title: 'Save Lesson',
+            onTap: widget.lesson != null
+                ? () {
+                    context.pop();
+                    debugPrint('Edit lesson');
+                  }
+                : () {
+                    context.pop();
+                    debugPrint('Add lesson');
+                  },
+          ),
           SizedBox(height: 32.h),
         ],
       ),

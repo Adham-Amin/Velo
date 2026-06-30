@@ -34,6 +34,11 @@ class ProfileViewBody extends StatelessWidget {
                 onTap: () => context.push(AppRoutes.changePass),
               ),
               ProfileSettingItem(
+                icon: Icons.chat_outlined,
+                label: 'Chat',
+                onTap: () => context.push(AppRoutes.userChat),
+              ),
+              ProfileSettingItem(
                 icon: Icons.favorite_outline,
                 label: 'Wishlist',
                 onTap: () => context.push(AppRoutes.wishlist),

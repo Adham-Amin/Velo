@@ -8,10 +8,13 @@ import 'package:velo/features/instructor/create_course/presentation/pages/create
 import 'package:velo/features/instructor/enrollments/presentation/pages/enrollments_view.dart';
 import 'package:velo/features/instructor/instructor_change_pass/presentation/pages/instructor_change_pass_view.dart';
 import 'package:velo/features/instructor/instructor_chat/presentation/pages/instructor_conversation_view.dart';
+import 'package:velo/features/instructor/instructor_course_details/domain/entities/lesson_entity.dart';
 import 'package:velo/features/instructor/instructor_course_details/presentation/pages/add_lesson_view.dart';
 import 'package:velo/features/instructor/instructor_course_details/presentation/pages/instructor_course_details_view.dart';
 import 'package:velo/features/instructor/instructor_edit_profile/presentation/pages/instructor_edit_profile_view.dart';
 import 'package:velo/features/instructor/main/instructor_main_view.dart';
+import 'package:velo/features/instructor/my_courses/domain/entities/instructor_course_entity.dart';
+import 'package:velo/features/instructor/my_courses/presentation/pages/edit_course_view.dart';
 import 'package:velo/features/instructor/reviews/presentation/pages/instructor_reviews_view.dart';
 import 'package:velo/features/user/change_pass/presentation/pages/change_pass_view.dart';
 import 'package:velo/features/user/checkout/presentation/pages/checkout_view.dart';
@@ -24,12 +27,14 @@ import 'package:velo/features/user/payment/presentation/pages/add_payment_view.d
 import 'package:velo/features/user/payment/presentation/pages/payment_view.dart';
 import 'package:velo/features/user/search/presentation/pages/search_filter_view.dart';
 import 'package:velo/features/intro/splash/presentation/views/splash_view.dart';
+import 'package:velo/features/user/user_chat/presentation/pages/user_chat_view.dart';
+import 'package:velo/features/user/user_chat/presentation/pages/user_conversation_view.dart';
 import 'package:velo/features/user/wishlist/presentation/pages/wishlist_view.dart';
 import 'app_routes.dart';
 
 class RouterGenerationConfig {
   static GoRouter router = GoRouter(
-    initialLocation: AppRoutes.instructorMain,
+    initialLocation: AppRoutes.main,
     routes: [
       GoRoute(
         path: AppRoutes.splash,
@@ -158,13 +163,31 @@ class RouterGenerationConfig {
       GoRoute(
         path: AppRoutes.instructorAddLesson,
         name: AppRoutes.instructorAddLesson,
-        builder: (context, state) => const AddLessonView(),
+        builder: (context, state) =>
+            AddLessonView(lesson: state.extra as LessonEntity?),
       ),
       GoRoute(
         path: AppRoutes.instructorCourseDetails,
         name: AppRoutes.instructorCourseDetails,
         builder: (context, state) =>
             InstructorCourseDetailsView(title: state.extra as String),
+      ),
+      GoRoute(
+        path: AppRoutes.editCourse,
+        name: AppRoutes.editCourse,
+        builder: (context, state) =>
+            EditCourseView(course: state.extra as InstructorCourseEntity),
+      ),
+      GoRoute(
+        path: AppRoutes.userChat,
+        name: AppRoutes.userChat,
+        builder: (context, state) => const UserChatView(),
+      ),
+      GoRoute(
+        path: AppRoutes.userConversation,
+        name: AppRoutes.userConversation,
+        builder: (context, state) =>
+            UserConversationView(name: state.extra as String),
       ),
     ],
   );

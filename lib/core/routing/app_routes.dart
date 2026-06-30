@@ -25,4 +25,8 @@ abstract class AppRoutes {
   static const instructorConversation = '/instructor-conversation';
   static const instructorChangePass = '/instructor-change-pass';
   static const instructorEditProfile = '/instructor-edit-profiles';
+  static const editCourse = '/edit-course';
+  static const userConversation = '/user-conversation';
+  static const userChat = '/user-chat';
+  static const userNotification = '/user-notification';
 }

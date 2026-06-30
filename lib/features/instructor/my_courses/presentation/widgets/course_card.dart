@@ -48,7 +48,10 @@ class CourseCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InstructorCourseThumbnail(course: course, onEdit: () {}),
+              InstructorCourseThumbnail(
+                course: course,
+                onEdit: () => context.push(AppRoutes.editCourse, extra: course),
+              ),
               Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(

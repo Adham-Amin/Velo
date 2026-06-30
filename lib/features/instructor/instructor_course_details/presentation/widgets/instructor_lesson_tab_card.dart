@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:velo/core/routing/app_routes.dart';
 import 'package:velo/core/utils/app_colors.dart';
 import 'package:velo/core/utils/app_styles.dart';
 import 'package:velo/features/instructor/instructor_course_details/domain/entities/lesson_entity.dart';
@@ -63,7 +65,8 @@ class InstructorLessonTabCard extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () =>
+                context.push(AppRoutes.instructorAddLesson, extra: lesson),
             icon: const Icon(
               Icons.edit_outlined,
               color: AppColors.greyBorder,
